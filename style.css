@@ -1,0 +1,271 @@
+/* Postavlja sav font stranice u Roboto te centrira sve elemente.*/
+*{
+    font-family: 'Roboto',sans-serif; 
+    margin: 0 auto;
+}
+
+/*Sav sadržaj je sužen na 70% širine preglednika.*/    
+body{
+    width: 70%;
+    background-color: #F9F9F8;
+    color: white;
+}
+
+/* Klasa koja pomiće elemente u odnosu na body. */
+.wrapper{
+    width: 95%; 
+}
+
+header {
+    background-color: #003A5A;
+}
+
+nav,footer {
+    background-color: #064B71;
+}
+
+/*Navigacija*/
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li{
+        display: inline-block;
+        padding: 15px 0px;
+        margin-right: 15px;
+    }
+    nav a:link, a:visited{
+        color: white;
+        text-decoration: none;
+    }
+    nav a:hover, a:active {
+        padding-bottom: 12px;
+        border-bottom: 4px solid #F18825;
+    }
+main {
+    background-color: white;
+    color: #1D1D1D;
+}
+
+/*Raspored članaka*/
+    .clanci{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #clanak_1, #clanak_2, #clanak_4, #clanak_5 {
+        margin-right: 25px;
+    }
+.clanci article {
+    position: relative;
+    width: 32%;
+    padding-bottom: 75px;  
+}
+.clanak {
+    width: 85%;
+}
+.clanak_tekst {
+    width: 70%;
+    position: relative;
+}
+footer{
+    text-align: center;
+}
+
+/*Dekoracije*/
+h1,h2,h3,nav,span{
+    font-weight: bold;
+}
+h1,h2,h3 {
+    padding: 15px 0px;
+}
+h2,nav {
+    text-transform: uppercase;  
+}
+h1{
+    font-size: xx-large;
+}
+span {
+    font-size: x-large;
+}
+h2{
+    font-size: x-large;
+}
+
+h3 {
+    font-size: large;
+}
+    /* h3 a:link{
+        color: #1D1D1D;
+        text-decoration: none;
+    }
+    h3 a:visited {
+        color: #1D1D1D;
+        text-decoration: none;
+    }
+    h3 a:hover {
+        color: #F18825;
+    }
+    h3  a:active{
+        color: #F18825;
+    } */
+
+    a.naslovi_clanaka:link, a.naslovi_clanaka:visited {
+        font-weight: bold;
+        padding: 15px 0px;
+        font-size: large;
+        color: #1D1D1D;
+        text-decoration: none;
+    }
+    a.naslovi_clanaka:hover, a.naslovi_clanaka:active {
+        font-weight: bold;
+        padding: 15px 0px;
+        font-size: large;
+        color: #F18825;
+    }
+
+p {
+    font-size: medium;
+}
+nav {
+    font-size: small;
+}
+.clanak .datum {
+    position: relative;
+    bottom: 0px; 
+}
+.datum {
+    font-size: x-small;
+    color: gray;
+    position: absolute;
+    bottom: 20px;  
+}
+hr {
+    border-color: lightgray;
+}
+.clanci hr {
+    position: absolute;
+    bottom: 0px;
+}
+img,hr {
+    width: 100%;
+}
+
+/*Unos - forma*/
+.unos_vijesti {
+    width: 30%;
+}
+.form-item {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+select{
+    width: 160px;
+    text-align: center;
+}
+button {
+    width: 20%;
+    align-content: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.category {
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size: x-large;
+}
+.autor {
+    font-size: medium;
+}
+/*Administracija*/
+.administracija{
+    width: 30%;
+}
+/*Validacija*/
+.bojaPoruke{
+    color:red;
+    font-size: smaller;
+    font-weight: normal;
+}
+/*Gumbi*/
+.prijava{
+    width: 25%;
+}
+.login_msg{
+    position: relative;
+    left: 40%;
+}
+.gumb_registracija{
+    width: 50%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    border: "2px solid";
+    border-color: #003A5A;
+    border-radius: 50px;
+    position: relative;
+    left: 25px;
+}
+.gumb_registracija:hover{
+    color: white;
+    background-color: #003A5A;
+}
+.gumb {
+    width: 20%;
+    cursor: pointer;
+    padding: 5px;
+    transition-duration: 0.6s;
+    border: "2px solid";
+}
+.gumb_cancel {
+    border-color: orange;
+}
+.gumb_cancel:hover{
+    color: white;
+    background-color: orange;
+}
+.gumb_update {
+    border-color: blue;
+}
+.gumb_update:hover{
+    color: white;
+    background-color: blue;
+}
+.gumb_delete {
+    border-color: red;
+}
+.gumb_delete:hover{
+    color: white;
+    background-color: red;
+}
+.gumb_accept {
+    border-color: green;
+}
+.gumb_accept:hover{
+    color: white;
+    background-color: green;
+}
+.registracija{
+    width: 25%;
+}
+.gumb_registracija{
+    width: 50%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    border: "2px solid";
+    border-color: #003A5A;
+    border-radius: 50px;
+    position: relative;
+    left: 25px;
+}
+.gumb_registracija:hover{
+    color: white;
+    background-color: #003A5A;
+}
